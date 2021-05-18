@@ -1,0 +1,26 @@
+{
+  "name": "devcamper_api",
+  "version": "1.0.0",
+  "description": "An advanced backend API",
+  "scripts": {
+    "start": "SET NODE_ENV=production && node dist/production-server",
+    "build":"babel server.js --out-file dist/production-server.js",
+    "dev": "nodemon --exec babel-node server.js"
+  },
+  "main": "server.js",
+  "author": "Riley Seaburg",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2"
+  }
+}
